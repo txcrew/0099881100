@@ -1,0 +1,53 @@
+# Hugo configuration file
+title: Venmo Design System Docs
+baseURL: https://redesigned-couscous-1pejk3r.pages.github.io/
+languageCode: en-us
+theme: hextra
+
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Design
+      pageRef: /design
+      weight: 1
+    - name: Content
+      pageRef: /content-design
+      weight: 2
+    - name: Search
+      weight: 4
+      params:
+        type: search
+
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: false
+
+  editURL:
+    enable: true
+    base: "https://github.com/paypal-venmo/venmo-design-system-docs/edit/main"
+
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo.svg
+      link: /
+      width: 105
+      height: 20
